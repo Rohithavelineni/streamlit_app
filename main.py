@@ -41,7 +41,7 @@ st.altair_chart(barchart,use_container_width=True)
 
 
 st.header("Product vs State")
-edu=alt.Chart(hr_data).mark_bar().encode(
+edu=alt.Chart(coffe_data).mark_bar().encode(
     x='Product',
     y='State',
     color='Product',
