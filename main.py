@@ -29,7 +29,7 @@ st.altair_chart(scatter,use_container_width=True)
 corr=round(coffe_data[x_val].corr(coffe_data[y_val]),2)
 st.write(f"The correlation between {x_val} and {y_val} is {corr}")
 
-st.header("Heading")
+st.header("Inventory vs Margin")
 
 barchart=alt.Chart(coffe_data).mark_bar().encode(
     x='Margin',
@@ -40,7 +40,14 @@ barchart=alt.Chart(coffe_data).mark_bar().encode(
 st.altair_chart(barchart,use_container_width=True)
 
 
-
+st.header("Product vs State")
+edu=alt.Chart(hr_data).mark_bar().encode(
+    x='Product',
+    y='State',
+    color='Product',
+    tooltip=['Product','State','Type']
+)
+st.altair_chart(edu,use_container_width=True)
 
 
 
