@@ -10,7 +10,7 @@ with st.expander('About this app'):
   st.write('')
   #st.image('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80', width=400)
 
-coffe_data=pd.read_csv(r"C:\Users\Tk447\Desktop\Fall\Visual_Analytics_5122\streamlit\ro\data\CoffeeChainmid.csv")
+coffe_data=pd.read_csv("CoffeeChainmid.csv")
 
 st.write(coffe_data)
 
